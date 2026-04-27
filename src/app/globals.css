@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --color-paper: #f7fbff;
+  --color-ink: #0b1f3a;
+  --color-muted: #a8c5d9;
+  --color-accent-1: #00a3d4;
+  --color-accent-2: #5c86b3;
+  --color-dark-bg: #0a1828;
+  --color-card-bg: #12314e;
+  --background: radial-gradient(circle at 12% 14%, #f4f9ff 0%, #1a446f 28%, #0f2e52 58%, #081a31 100%);
+  --foreground: var(--color-paper);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--color-paper);
+  font-family: var(--font-geist-sans), sans-serif;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.ambient-glow {
+  position: absolute;
+  inset: -22rem auto auto -10rem;
+  width: 38rem;
+  height: 38rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle at center, rgb(255 255 255 / 44%), rgb(92 134 179 / 0%) 66%);
+  pointer-events: none;
+}
+
+.white-surface {
+  background: linear-gradient(160deg, rgb(255 255 255 / 16%), rgb(255 255 255 / 4%));
+  border: 1px solid rgb(255 255 255 / 20%);
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: rise 650ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.card-highlight {
+  position: relative;
+}
+
+.card-highlight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, rgb(92 134 179 / 40%), rgb(0 123 167 / 42%)) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-up {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  * {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}
+
+/* Improved text and spacing for dark theme */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+a {
+  transition: color 200ms ease, opacity 200ms ease;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent-1);
+  outline-offset: 2px;
+}
