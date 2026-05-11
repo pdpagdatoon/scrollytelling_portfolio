@@ -6,8 +6,10 @@ export const portfolioData: PortfolioData = {
   location: "Newark, NJ",
   intro:
     "I am an Information Technology student at NJIT focused on web applications, user experience, and practical full-stack delivery. I build products that are clear, useful, and grounded in real user needs.",
+  profilePhoto: "/profile/image.png",
   socialLinks: [
     { label: "LinkedIn", href: "https://linkedin.com/in/patrick-david-pagdatoon" },
+    { label: "GitHub", href: "https://github.com/pdpagdatoon" },
     { label: "Email", href: "mailto:pdpagdatoon@gmail.com" },
     { label: "Phone", href: "tel:+17325814072" },
   ],
@@ -32,22 +34,44 @@ export const portfolioData: PortfolioData = {
     "VMware Workstation",
     "TypeScript",
   ],
+  skillGroups: [
+    {
+      category: "Frontend",
+      skills: ["JavaScript", "TypeScript", "Angular", "HTML", "CSS"],
+    },
+    {
+      category: "Backend & Databases",
+      skills: ["Node.js", "Express.js", "PHP", "MongoDB", "SQL"],
+    },
+    {
+      category: "Languages",
+      skills: ["Java", "Python", "C#"],
+    },
+    {
+      category: "Design Tools",
+      skills: ["Figma", "Adobe Illustrator", "Adobe Photoshop", "Canva"],
+    },
+    {
+      category: "DevOps & Tooling",
+      skills: ["GitHub", "VMware Workstation"],
+    },
+  ],
   projects: [
     {
       title: "Distributed MEAN Price Comparison Web App",
       summary:
         "Built a distributed MEAN stack application to compare product prices across multiple retailers with secure account features.",
       techStack: ["MongoDB", "Express.js", "Angular", "Node.js", "Ubuntu VMs"],
-      liveUrl: "https://example.com/mean-app",
-      repoUrl: "https://github.com",
+      type: "Full-Stack",
+      featured: true,
     },
     {
       title: "UX Maintenance Request App Prototype",
       summary:
         "Produced a high-usability Figma maintenance request app concept based on user research and streamlined communication flows.",
       techStack: ["Figma", "UX Research", "Interaction Design", "Information Architecture"],
-      liveUrl: "https://example.com/ux-app",
-      repoUrl: "https://github.com",
+      type: "UX / Design",
+      featured: true,
     },
   ],
   experience: [
@@ -100,7 +124,7 @@ export const portfolioData: PortfolioData = {
         "Increased awareness through social-first event promotion.",
         "Co-developed culturally engaging campaigns with executive board teammates.",
       ],
-      postImages: ["/posts/JSA GBM 1.png", "/posts/抹茶 (5).png"],
+      postImages: ["/posts/JSA GBM 1.png", "/posts/抹茶 (5).png", "/posts/JSA GBM 2 Flyer (Instagram Post (45)) (1).png"],
     },
     {
       organization: "Nucleus Yearbook Club",
@@ -111,7 +135,7 @@ export const portfolioData: PortfolioData = {
         "Created Instagram-focused materials to increase yearbook awareness.",
         "Promoted campaigns through clear communication at student events.",
       ],
-      postImages: ["/posts/JSA GBM 2 Flyer (Instagram Post (45)) (1).png"],
+      postImages: [],
     },
   ],
   contactEmail: "pdpagdatoon@gmail.com",

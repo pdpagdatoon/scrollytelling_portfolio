@@ -27,14 +27,7 @@ export function ImageCarousel({ images }: ImageCarouselProps) {
       <div className="flex justify-center">
         <div className="w-full max-w-sm md:max-w-md">
           <div className="relative aspect-[4/5] w-full rounded-lg overflow-hidden border border-white/10 bg-[#081429]">
-            <Image
-              src={images[currentIndex]}
-              alt={`Campaign post ${currentIndex + 1}`}
-              fill
-              className="object-contain p-2"
-              sizes="(max-width: 768px) 90vw, 420px"
-              priority
-            />
+            <Image src={images[currentIndex]} alt={`Campaign post ${currentIndex + 1}`} fill className="object-contain p-2" sizes="(max-width: 768px) 90vw, 420px" priority />
           </div>
         </div>
       </div>

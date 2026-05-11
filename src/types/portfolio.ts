@@ -6,9 +6,12 @@ export interface SocialLink {
 export interface Project {
   title: string;
   summary: string;
+  description?: string;
   techStack: string[];
-  liveUrl: string;
-  repoUrl: string;
+  liveUrl?: string;
+  repoUrl?: string;
+  type?: "Full-Stack" | "UX / Design" | "Research" | "Open Source";
+  featured?: boolean;
 }
 
 export interface Experience {
@@ -21,6 +24,11 @@ export interface Experience {
 export interface ResumeHighlight {
   title: string;
   detail: string;
+}
+
+export interface SkillGroup {
+  category: string;
+  skills: string[];
 }
 
 export interface PrCampaign {
@@ -36,8 +44,10 @@ export interface PortfolioData {
   role: string;
   location: string;
   intro: string;
+  profilePhoto?: string;
   socialLinks: SocialLink[];
   skills: string[];
+  skillGroups?: SkillGroup[];
   projects: Project[];
   experience: Experience[];
   resumeHighlights: ResumeHighlight[];

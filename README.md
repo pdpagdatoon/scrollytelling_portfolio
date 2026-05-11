@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Patrick Pagdatoon Portfolio
 
-## Getting Started
+This repository contains my personal scrollytelling portfolio site built with Next.js, React, TypeScript, and Tailwind CSS. It presents my work in web development, campaigns, and social media / graphic design through a guided single-page experience.
 
-First, run the development server:
+## Live Links
+
+- GitHub Pages: https://pdpagdatoon.github.io/portfolio/
+- Repository: https://github.com/pdpagdatoon/portfolio
+
+## Project Purpose
+
+This scrollytelling site highlights:
+
+- featured software projects
+- technical tools and capabilities
+- campaign work
+- social media and graphic design work
+- contact information for recruiters and collaborators
+
+The site also serves as a small experiment in a more spec-driven workflow for AI-assisted development, where features are defined more clearly before implementation so the results are more intentional and reliable.
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+
+## Local Development
+
+Install dependencies and start the dev server:
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000 in your browser.
+
+## Available Scripts
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Notes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Key portfolio sections include:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- About / intro
+- Projects
+- Tools and capabilities
+- Campaigns
+- Social media and graphic design showcase
+- Contact
 
-## Learn More
+Interactive behavior includes:
 
-To learn more about Next.js, take a look at the following resources:
+- smooth section scrolling
+- right-side rail navigation
+- active section highlighting
+- animated post carousel for design work
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## GitHub Pages Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is intended to be published to GitHub Pages at:
 
-## Deploy on Vercel
+https://pdpagdatoon.github.io/portfolio/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If the deployment workflow changes later, this URL should remain the primary public link for the class submission unless the repository name changes.
