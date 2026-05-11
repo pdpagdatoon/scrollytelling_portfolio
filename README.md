@@ -4,8 +4,8 @@ This repository contains my personal scrollytelling portfolio site built with Ne
 
 ## Live Links
 
-- GitHub Pages: https://pdpagdatoon.github.io/portfolio/
-- Repository: https://github.com/pdpagdatoon/portfolio
+- GitHub Pages: https://pdpagdatoon.github.io/scrollytelling_portfolio/
+- Repository: https://github.com/pdpagdatoon/scrollytelling_portfolio
 
 ## Project Purpose
 
@@ -68,6 +68,6 @@ Interactive behavior includes:
 
 This project is intended to be published to GitHub Pages at:
 
-https://pdpagdatoon.github.io/portfolio/
+https://pdpagdatoon.github.io/scrollytelling_portfolio/
 
-If the deployment workflow changes later, this URL should remain the primary public link for the class submission unless the repository name changes.
+The repository for this project is named `scrollytelling_portfolio`, so the GitHub Pages URL uses that same path. If the deployment workflow changes later, this should remain the primary public link for the class submission unless the repository name changes again.
