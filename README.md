@@ -66,8 +66,4 @@ Interactive behavior includes:
 
 ## GitHub Pages Deployment
 
-This project is intended to be published to GitHub Pages at:
-
 https://pdpagdatoon.github.io/scrollytelling_portfolio/
-
-The repository for this project is named `scrollytelling_portfolio`, so the GitHub Pages URL uses that same path. If the deployment workflow changes later, this should remain the primary public link for the class submission unless the repository name changes again.
