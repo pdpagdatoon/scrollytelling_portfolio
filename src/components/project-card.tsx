@@ -5,12 +5,23 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const fallbackSourceUrl =
+    project.title === "Distributed MEAN Price Comparison Web App"
+      ? "https://github.com/dominicattal/it340-project"
+      : undefined;
+  const fallbackLiveUrl =
+    project.title === "UX Maintenance Request App Prototype"
+      ? "https://www.figma.com/proto/rUoGGfOqi4WSTKyzGW46G6/Highlander-Help?node-id=0-1&t=vQNgZohO0cEgYPF2-1"
+      : undefined;
+
   const availableLinks = [
-    project.liveUrl && !project.liveUrl.includes(["example", "com"].join("."))
-      ? { label: "Live Site", href: project.liveUrl }
+    (project.liveUrl ?? fallbackLiveUrl) && !(project.liveUrl ?? fallbackLiveUrl)?.includes(["example", "com"].join("."))
+      ? { label: project.type === "UX / Design" ? "Prototype" : "Live Site", href: project.liveUrl ?? fallbackLiveUrl }
       : null,
     project.repoUrl && project.repoUrl.trim().length > 0
       ? { label: "Source", href: project.repoUrl }
+      : fallbackSourceUrl
+        ? { label: "Source", href: fallbackSourceUrl }
       : null,
   ].filter((link): link is { label: string; href: string } => Boolean(link));
 

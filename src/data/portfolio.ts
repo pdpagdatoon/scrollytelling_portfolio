@@ -81,6 +81,7 @@ export const portfolioData: PortfolioData = {
       summary:
         "Produced a high-usability Figma maintenance request app concept based on user research and streamlined communication flows.",
       techStack: ["Figma", "UX Research", "Interaction Design", "Information Architecture"],
+      liveUrl: "https://www.figma.com/proto/rUoGGfOqi4WSTKyzGW46G6/Highlander-Help?node-id=0-1&t=vQNgZohO0cEgYPF2-1",
       type: "UX / Design",
       featured: true,
     },
