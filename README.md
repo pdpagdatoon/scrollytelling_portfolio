@@ -4,7 +4,7 @@ This repository contains my personal scrollytelling portfolio site built with Ne
 
 ## Live Links
 
-- GitHub Pages: https://pdpagdatoon.github.io/scrollytelling_portfolio/
+- Live Site: https://scrollytellingportfolio.vercel.app/
 - Repository: https://github.com/pdpagdatoon/scrollytelling_portfolio
 
 ## Project Purpose
@@ -64,6 +64,6 @@ Interactive behavior includes:
 - active section highlighting
 - animated post carousel for design work
 
-## GitHub Pages Deployment
+## Deployment
 
-https://pdpagdatoon.github.io/scrollytelling_portfolio/
+https://scrollytellingportfolio.vercel.app/
