@@ -5,7 +5,7 @@ export const portfolioData: PortfolioData = {
   role: "Information Technology Student | Web Applications",
   location: "Newark, NJ",
   intro:
-    "I am an Information Technology student at NJIT focused on web applications, user experience, and practical full-stack delivery. I build products that are clear, useful, and grounded in real user needs.",
+    "I am an Information Technology student at NJIT focused on web applications, user experience, practical full-stack delivery, and integrating AI-powered features into useful products. I build experiences that are clear, thoughtful, and grounded in real user needs.",
   profilePhoto: "/profile/image.png",
   socialLinks: [
     { label: "LinkedIn", href: "https://linkedin.com/in/patrick-david-pagdatoon" },
@@ -69,7 +69,7 @@ export const portfolioData: PortfolioData = {
     {
       title: "Student Reality Lab",
       summary:
-        "Built and deployed a project site for Student Reality Lab with a production deployment and source repository hosted online.",
+        "Built and deployed an AI-assisted project for NJIT students that helps them plan their spring break with a production deployment and source repository hosted online.",
       techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
       liveUrl: "https://student-reality-lab-pagdatoon.vercel.app/",
       repoUrl: "https://github.com/pdpagdatoon/student-reality-lab-pagdatoon",
@@ -126,7 +126,7 @@ export const portfolioData: PortfolioData = {
   ],
   prCampaigns: [
     {
-      organization: "NJIT Baking Club",
+      organization: "Society of Sweets",
       title: "Public Relations - Executive Board",
       summary:
         "Created social media content on Instagram and Discord to increase club engagement and promote interactive baking events.",
@@ -134,7 +134,7 @@ export const portfolioData: PortfolioData = {
         "Built engagement-focused promotional posts for campus audiences.",
         "Strengthened collaborations by connecting with other organizations.",
       ],
-      postImages: ["/posts/Get to Know (2).png"],
+      postImages: ["/logos/Society_of_Sweets_Logo.png", "/posts/Get to Know (2).png"],
     },
     {
       organization: "Japanese Students Association",
@@ -145,7 +145,7 @@ export const portfolioData: PortfolioData = {
         "Increased awareness through social-first event promotion.",
         "Co-developed culturally engaging campaigns with executive board teammates.",
       ],
-      postImages: ["/posts/JSA GBM 1.png", "/posts/抹茶 (5).png", "/posts/JSA GBM 2 Flyer (Instagram Post (45)) (1).png"],
+      postImages: ["/logos/JSAIconLogoWHITE.jpg", "/posts/JSA GBM 1.png", "/posts/抹茶 (5).png", "/posts/JSA GBM 2 Flyer (Instagram Post (45)) (1).png"],
     },
     {
       organization: "Nucleus Yearbook Club",
@@ -156,7 +156,7 @@ export const portfolioData: PortfolioData = {
         "Created Instagram-focused materials to increase yearbook awareness.",
         "Promoted campaigns through clear communication at student events.",
       ],
-      postImages: [],
+      postImages: ["/logos/images.jpg"],
     },
   ],
   contactEmail: "pdpagdatoon@gmail.com",

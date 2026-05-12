@@ -24,7 +24,7 @@ export default async function Home() {
   const portfolio = await portfolioService.getPortfolio();
   const totalSkillCount = portfolio.skillGroups?.flatMap((group) => group.skills).length ?? portfolio.skills.length;
 
-  // Pull every image from public/posts so new uploads appear automatically.
+  // Pull every image from public/posts so new social/design uploads appear automatically.
   const postFiles = await readdir("public/posts");
   const allPostImages = postFiles
     .filter((file) => /\.(png|jpe?g|webp|gif)$/i.test(file))
@@ -40,6 +40,7 @@ export default async function Home() {
     <>
     <main className="relative overflow-x-hidden bg-[var(--color-ink)] pt-16">
       <div className="ambient-glow" />
+      <div className="rain-overlay" aria-hidden="true" />
 
       <SideRail links={sideRailLinks} />
 
