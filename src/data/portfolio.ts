@@ -85,6 +85,15 @@ export const portfolioData: PortfolioData = {
       type: "UX / Design",
       featured: true,
     },
+    {
+      title: "AI-Assisted Productivity Application",
+      summary:
+        "A modern, professionally scoped AI-assisted productivity application that demonstrates growth toward frontend/full-stack software engineering through React, TypeScript, structured AI integration, testing, and thoughtful product design.",
+      techStack: ["React", "TypeScript", "AI Integration", "Testing", "Product Design"],
+      repoUrl: "https://github.com/pdpagdatoon/is219final",
+      type: "Full-Stack",
+      featured: true,
+    },
   ],
   experience: [
     {
