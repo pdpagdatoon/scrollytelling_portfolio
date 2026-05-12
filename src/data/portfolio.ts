@@ -62,6 +62,17 @@ export const portfolioData: PortfolioData = {
       summary:
         "Built a distributed MEAN stack application to compare product prices across multiple retailers with secure account features.",
       techStack: ["MongoDB", "Express.js", "Angular", "Node.js", "Ubuntu VMs"],
+      repoUrl: "https://github.com/dominicattal/it340-project",
+      type: "Full-Stack",
+      featured: true,
+    },
+    {
+      title: "Student Reality Lab",
+      summary:
+        "Built and deployed a project site for Student Reality Lab with a production deployment and source repository hosted online.",
+      techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
+      liveUrl: "https://vercel.com/pdpag/student-reality-lab-pagdatoon",
+      repoUrl: "https://github.com/pdpagdatoon/student-reality-lab-pagdatoon",
       type: "Full-Stack",
       featured: true,
     },

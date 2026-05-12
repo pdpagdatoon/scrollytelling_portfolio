@@ -15,8 +15,8 @@ import Image from "next/image";
 const sideRailLinks = [
   { label: "Home", targetId: "about", icon: "/icons/home-svgrepo-com.svg" },
   { label: "Projects", targetId: "projects", icon: "/icons/folder-svgrepo-com.svg" },
-  { label: "Campaigns", targetId: "campaigns", icon: "/icons/megaphone-solid-svgrepo-com.svg" },
   { label: "Social Media & Design", targetId: "social-work", icon: "/icons/images-svgrepo-com.svg" },
+  { label: "Campaigns", targetId: "campaigns", icon: "/icons/megaphone-solid-svgrepo-com.svg" },
   { label: "Contact", targetId: "contact", icon: "/icons/email-1572-svgrepo-com.svg" },
 ];
 
@@ -93,7 +93,7 @@ export default async function Home() {
         <AnimateIn delay={170} className="space-y-8">
           <SectionTitle
             eyebrow="Projects"
-            title="Projects I've built and shipped"
+            title="Projects"
             description="Each project demonstrates clear architecture, reusable systems, and user-first execution."
           />
           <div className="grid gap-6 md:grid-cols-2">
@@ -130,6 +130,17 @@ export default async function Home() {
         </AnimateIn>
       </section>
 
+      {/* Social Media and Graphic Design Work */}
+      <section id="social-work" className="mx-auto max-w-7xl scroll-mt-24 px-6 py-16 sm:px-10 lg:px-16">
+        <AnimateIn delay={210} className="space-y-8">
+          <SectionTitle
+            eyebrow="Social Media & Graphic Design"
+            title="Social Media & Graphic Design"
+          />
+          {allPostImages.length > 0 ? <PostShowcase images={allPostImages} campaigns={portfolio.prCampaigns} /> : null}
+        </AnimateIn>
+      </section>
+
       <section id="campaigns" className="mx-auto max-w-7xl scroll-mt-24 px-6 py-16 sm:px-10 lg:px-16">
         <AnimateIn delay={180} className="space-y-8">
           <SectionTitle
@@ -141,17 +152,6 @@ export default async function Home() {
               <PrCampaignCard key={`${campaign.organization}-${campaign.title}`} campaign={campaign} />
             ))}
           </div>
-        </AnimateIn>
-      </section>
-
-      {/* Social Media and Graphic Design Work */}
-      <section id="social-work" className="mx-auto max-w-7xl scroll-mt-24 px-6 py-16 sm:px-10 lg:px-16">
-        <AnimateIn delay={210} className="space-y-8">
-          <SectionTitle
-            eyebrow="Social Media and Graphic Design work"
-            title="Social Media and Graphic Design work"
-          />
-          {allPostImages.length > 0 ? <PostShowcase images={allPostImages} campaigns={portfolio.prCampaigns} /> : null}
         </AnimateIn>
       </section>
 

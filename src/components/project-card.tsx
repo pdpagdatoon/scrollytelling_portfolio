@@ -9,7 +9,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     project.liveUrl && !project.liveUrl.includes(["example", "com"].join("."))
       ? { label: "Live Site", href: project.liveUrl }
       : null,
-    project.repoUrl && /^https:\/\/github\.com\/[^/]+\/[^/]+/.test(project.repoUrl)
+    project.repoUrl && project.repoUrl.trim().length > 0
       ? { label: "Source", href: project.repoUrl }
       : null,
   ].filter((link): link is { label: string; href: string } => Boolean(link));
